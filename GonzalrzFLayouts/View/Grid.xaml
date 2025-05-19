@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GonzalrzFLayouts.Grid"
+             Title="Grid">
+    <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+        <BoxView Color="Purple" Grid.Row="0" Grid.Column="0"/>
+        <BoxView Color="Yellow" Grid.Row="0" Grid.Column="1"/>
+        <BoxView Color="LightBlue" Grid.Row="1" Grid.Column="0"/>
+        <BoxView Color="Brown" Grid.Row="1" Grid.Column="1" />
+
+        <StackLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Center"
+VerticalOptions="Center"> 
+
+            <Button Text="Ir a StackLayout" Clicked="Button_Clicked" WidthRequest="200"
+                HeightRequest="50"
+                />
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>
