@@ -3,10 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GonzalrzFLayouts.View.Absolute"
              Title="Absolute">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+
+       
+        <Image Source="tun.jpeg"
+               AbsoluteLayout.LayoutBounds="0,0,50,50"
+               AbsoluteLayout.LayoutFlags="None" />
+
+        <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Padding="20" Spacing="10">
+                <Label Text="Tun Tun Tun Sahur es un personaje que ha surgido en internet" FontSize="20"/>
+                <Label Text="asociado a una leyenda urbana que se ha vuelto virulenta. Se trata de una especie de ser o criatura que, según la leyenda" FontSize="20"/>
+                 <Label Text= "aparece para castigar a quienes ignoran el sahúr (comida antes del amanecer durante el Ramadán)" FontSize="20"/>
+                <Label Text="Tun Tun Tun Sahur es un personaje que ha surgido en internet" FontSize="20"/>
+                <Label Text="asociado a una leyenda urbana que se ha vuelto virulenta. Se trata de una especie de ser o criatura que, según la leyenda" FontSize="20"/>
+                <Label Text= "aparece para castigar a quienes ignoran el sahúr (comida antes del amanecer durante el Ramadán)" FontSize="20"/>
+                <Label Text="Tun Tun Tun Sahur es un personaje que ha surgido en internet" FontSize="20"/>
+                <Label Text="asociado a una leyenda urbana que se ha vuelto virulenta. Se trata de una especie de ser o criatura que, según la leyenda" FontSize="20"/>
+                <Label Text= "aparece para castigar a quienes ignoran el sahúr (comida antes del amanecer durante el Ramadán)" FontSize="20"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Button Text="Ir a GridLayout"
+                WidthRequest="150"
+                HeightRequest="50"
+                Clicked="OnGridLayoutClicked"
+                AbsoluteLayout.LayoutBounds="1,1,150,50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+    </AbsoluteLayout>
 </ContentPage>
